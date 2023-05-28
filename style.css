@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+#info{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 700px;
+    margin-right: 700px;
+    color: whitesmoke;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    color: whitesmoke;
+}
+#container{
+    text-align: center;
+    color: white;
+}
+#button{
+    background-color: green;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.welcome{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.choose{
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#register{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}

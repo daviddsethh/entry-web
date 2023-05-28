@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Course Project Part 2</title>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#username').mouseover(function(){
+                $(this).val('Please enter username');
+                $(this).css('background-color', 'blue');
+            });
+            $('#password').mouseover(function(){
+                $(this).val('Please enter password');
+                $(this).css('background-color', 'orange');
+            });
+            $('#button').click(function(){
+                alert('Thank you for submitting!');
+            });
+            $('#photo').width(0).height(0).css('opacity', 0);
+            $('#caption').hide();
+            $('#photo').animate({
+                width: '700px',
+                height: '500px',
+                opacity: 1,
+            },
+            1000,
+            function(){
+                $('#caption').fadeIn(1000);
+            });
+            $('#container').dblclick(function(){
+                $('#container').fadeOut(1500)
+            });   
+        }); // end ready
+    </script>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <img id="photo" src="videogames1.jpg" alt="Video Games">
+            <figcaption id="caption">Video Games have come a long way. From 1958 - now, getting better as the years come!</figcaption>
+        </div>
+    </header>
+    <main>
+        <div id="container2">
+            <h1>Seth's Vidja Games</h1>
+            <p class="welcome">Welcome to a world of imagination,</p>
+            <p class="choose">Choose your favorite game!</p>
+        </div>
+        <div id="register">
+            <input type="radio" name="gameName" value="Runescape">RuneScape<br>
+            <input type="radio" name="gameName" value="Skyrim">Skyrim<br>
+            <input type="radio" name="gameName" value="Destiny">Destiny<br>
+            <input type="radio" name="gameName" value="Tetris">Tetris<br>
+            <input type="radio" name="gameName" value="Fortnite">Fortnite<br>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <fieldset id="info"><legend>User Info</legend>
+            <form>
+                <p>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </p>
+                <p>
+                    <label for="password">Password: </label>
+                    <input type="text" name="password" id="password" placeholder="Password">
+                </p>
+                <p class="button">
+                    <input type="submit" name="button" id="button" value="Submit">
+                </p>
+            </form>
+        </fieldset>
+    </footer>
+</body>
+</html>
